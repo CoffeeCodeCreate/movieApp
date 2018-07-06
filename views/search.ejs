@@ -1,0 +1,15 @@
+<% include partials/header %>
+
+<h1>Search for a movie!</h1>
+
+<!--
+    - action will send the post result body to the 'results' page
+    - name will be the key we locate in the post request body
+        to get the user's input data.
+-->
+<form action="/results" method="GET">
+    <input type="text" placeholder="Search term" name="search">
+    <input type="submit">
+</form>
+
+<% include partials/footer %>
