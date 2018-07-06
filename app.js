@@ -1,4 +1,11 @@
-//&apikey=thewdb
+/**
+ * Links used for reference:
+ * https://www.omdbapi.com/
+ * http://www.omdbapi.com/?apikey=thewdb&i=tt0080684
+ * 
+ */
+
+//API KEY: &apikey=thewdb
 var request = require('request');
 var express = require('express');
 var app = express();
