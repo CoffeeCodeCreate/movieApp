@@ -1,15 +1,17 @@
 <% include partials/header %>
 
-<h1>Search for a movie!</h1>
+<div id="container">
+    <img id="camPic" src="/pics/Video-Camera-2-icon.png"> <h1 id="mainHeader">MoviePedia</h1>
 
-<!--
-    - action will send the post result body to the 'results' page
-    - name will be the key we locate in the post request body
-        to get the user's input data.
--->
-<form action="/results" method="GET">
-    <input type="text" placeholder="Search term" name="search">
-    <input type="submit">
-</form>
+    <!--
+        - action will send the post result body to the 'results' page
+        - name will be the key we locate in the post request body
+            to get the user's input data.
+    -->
+    <form action="/results" method="GET">
+        <input id="searchBar" type="text" placeholder="Search movie" name="search" required>
+        <button id="searchBtn"><i class="fas fa-search"></i></button>
+    </form>
+</div>
 
 <% include partials/footer %>

@@ -1,0 +1,5 @@
+<% data["Search"].forEach(function(movie){ %>
+    <img src=<%= movie["Poster"] %>/>
+    <li><%= movie["Title"] %></li>
+    <li><%= movie["Year"] %></li>
+<% }); %> 

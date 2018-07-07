@@ -33,7 +33,7 @@ app.get("/results", function(req,res){
     var query = req.query.search
     
     //The URL of the search query
-    var url = "http://www.omdbapi.com/?apikey=thewdb&s=" + query;
+    var url = "http://www.omdbapi.com/?apikey=thewdb&t=" + query;
     request(url, function(err,response,body){
         //if there is no error and the status code is 200: 'ok'
         if(!err && response.statusCode == 200)

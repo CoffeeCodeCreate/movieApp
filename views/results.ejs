@@ -2,12 +2,10 @@
 
 <h1>Results page</h1>
 
-
-<% data["Search"].forEach(function(movie){ %>
-    <img src=<%= movie["Poster"] %>/>
-    <li><%= movie["Title"] %></li>
-    <li><%= movie["Year"] %></li>
-<% }); %> 
+<div id="container resultsContainer">
+    <h1><%= data["Title"] %></h1>
+    <img src= <%= data["Poster"] %>
+</div>
 
 <a href="/">Search Again!</a>
 
