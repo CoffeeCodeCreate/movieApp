@@ -5,7 +5,7 @@ body
 {
     background-color: #FFF;
     padding: 0;
-    color: #130f30;
+    color: #0E1717;
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
@@ -15,7 +15,7 @@ body
 {
     display: inline-block;
     font-family: 'Lobster', sans-serif;
-    color: #130f30;
+    color: #0E1717;
     font-size: 110px;
 }
 
@@ -40,11 +40,23 @@ body
     height: 50px;
     width: 200px;
     box-sizing: border-box;
+    background-color: #0E1717;
+    color: #fff;
     padding: 0 10px;
     margin-right: -5px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     
+}
+
+footer
+{
+    height: 20px;
+    width: 100%;
+    background-color: #0E1717;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 #resultsContainer
