@@ -1,6 +1,6 @@
 <% include partials/header %>
 
-<h1>Results page</h1>
+<img class="camPic" id="resultsPageCamPic" src="/pics/Video-Camera-2-icon.png">
 
 <div id="resultsContainer">
 
@@ -10,17 +10,18 @@
 
     <div id="informationContainer">
         <h1><%= data["Title"] %></h1>
+        <hr>
         <div id="movieInformation">
-
+            <h2>Year: <%= data["Year"] %></h2>
+            <h2>Rated: <%= data["Rated"] %></h2>
+            <h2>Genre: <%= data["Genre"] %></h2>
+            <h2>Plot: <%= data["Plot"] %></h2>
+            <h3>Actors: <%= data["Actors"] %></h3>
         </div> <!-- END OF MOVIE INFORMATION CONTAINER -->
     </div> <!-- END OF INFORMATION CONTAINER -->
 
     </div> <!-- END OF RESULTS CONTAINER -->
-    <div id="actorNamesContainer">
-        <p>Actors go here</p>
-    </div>
-
-<a href="/">Search Again!</a>
+<button id="searchAgain" onclick="location.href='/'" > Search Again <i class="fas fa-sync-alt"></i></button>
 
 
 <% include partials/footer %>

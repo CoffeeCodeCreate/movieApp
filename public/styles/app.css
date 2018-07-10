@@ -9,6 +9,7 @@ body
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    overflow: hidden;
 }
 
 #mainHeader
@@ -19,7 +20,7 @@ body
     font-size: 110px;
 }
 
-#camPic
+.camPic
 {
     height: 100px;
     display: inline-block;
@@ -51,36 +52,34 @@ body
 
 footer
 {
-    height: 20px;
+    height: 100px;
     width: 50%;
     background-color: #FABC3D;
     position: absolute;
-    bottom: 0;
+    bottom: -80px;
     left: 50%;
     transform: translateX(-50%);    
     cursor: pointer;
-    transition: height .2s linear;
+    transition: bottom .2s linear;
 }
 
 .contactFooterActive
 {
-    height: 100px;
+    bottom: 10px;
 }
 
 .contactFooterInactive
 {
-    height: 20px;
+    bottom: -80px;
 }
 
-footer:active
+.contactFooterInactive:active
 {
     bottom: -2px;
 }
 
-
 #resultsContainer
 {
-    border: solid 1px black;
     background-color: #FFFFFF;
     display: flex;
     flex-direction: row;
@@ -89,8 +88,8 @@ footer:active
 
 #resultsContainer div
 {
-    border: solid 1px red;
-    padding: 0 20px;
+
+    padding: 10px 20px;
 }
 
 #informationContainer
@@ -106,4 +105,36 @@ footer:active
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     background-color: #FABC3D;
+}
+
+#resultsPageCamPic
+{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#actorNamesContainer
+{
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+
+#searchAgain
+{
+    height: 50px;
+    width: 200px;
+    margin: 50px 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    border-radius: 5px;
+    background-color: #FABC3D;
+    cursor: pointer;
+    text-decoration: none;
+    color: #0E1717;
+
+
 }
