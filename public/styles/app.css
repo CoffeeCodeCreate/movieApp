@@ -52,12 +52,31 @@ body
 footer
 {
     height: 20px;
-    width: 100%;
-    background-color: #0E1717;
+    width: 50%;
+    background-color: #FABC3D;
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);    
+    cursor: pointer;
+    transition: height .2s linear;
 }
+
+.contactFooterActive
+{
+    height: 100px;
+}
+
+.contactFooterInactive
+{
+    height: 20px;
+}
+
+footer:active
+{
+    bottom: -2px;
+}
+
 
 #resultsContainer
 {
