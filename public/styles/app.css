@@ -63,6 +63,20 @@ footer
 {
     border: solid 1px black;
     background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#resultsContainer div
+{
+    border: solid 1px red;
+    padding: 0 20px;
+}
+
+#informationContainer
+{
+    width: 60%;
 }
 
 #searchBtn

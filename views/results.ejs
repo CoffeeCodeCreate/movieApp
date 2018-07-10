@@ -2,11 +2,23 @@
 
 <h1>Results page</h1>
 
-<div id="container resultsContainer">
-    <h1><%= data["Title"] %></h1>
-    <img src= <%= data["Poster"] %>
-    <div id=""></div>
-</div>
+<div id="resultsContainer">
+
+    <div id="moviePosterContainer">
+        <img src= <%= data["Poster"] %> />
+    </div>
+
+    <div id="informationContainer">
+        <h1><%= data["Title"] %></h1>
+        <div id="movieInformation">
+
+        </div> <!-- END OF MOVIE INFORMATION CONTAINER -->
+    </div> <!-- END OF INFORMATION CONTAINER -->
+
+    </div> <!-- END OF RESULTS CONTAINER -->
+    <div id="actorNamesContainer">
+        <p>Actors go here</p>
+    </div>
 
 <a href="/">Search Again!</a>
 
